@@ -1,0 +1,28 @@
+void main() {
+  print(add(5, 3));
+  divide(10, 2);
+  print(multiply(a: 2, b: 3, c: 4));
+  printName('Evelyn');
+}
+
+//A function with two arguments and returns the addition of both arguments.
+int add(int a, int b) {
+  return a + b;
+}
+
+//A function with two arguments, prints the division of both arguments but returns no value.
+
+void divide(int a, int b) {
+  print(a ~/ b);
+} //you can use "num quotient= num1/num2" as the argument to get the actual division of 2 numbers.
+
+//A function with four named optional arguments that returns the multiplication of all arguments.
+
+int multiply({int a: 0, int b: 0, int c: 0, int d: 1}) {
+  return a * b * c * d;
+}
+
+//A function with one argument that prints your name.
+void printName(String name) {
+  print(name);
+}
